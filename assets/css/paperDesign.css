@@ -858,8 +858,20 @@ input[type="button"]:focus {
   background-color: #EB5E28;
 }
 
+label {
+  font-weight: 500;
+}
+
 label small {
-  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  color: #9A9A9A;
+}
+
+label.error:not(.form-control) {
+  color: #EB5E28;
+  font-weight: 300;
+  font-size: 0.8em;
 }
 
 /*            Navigation menu                */
@@ -1387,11 +1399,6 @@ label small {
   position: absolute;
   left: -10000px;
   z-index: -1;
-}
-.wizard-card label.error:not(.form-control) {
-  color: #EB5E28;
-  font-weight: 300;
-  font-size: 0.8em;
 }
 .wizard-card .description {
   color: #999999;
