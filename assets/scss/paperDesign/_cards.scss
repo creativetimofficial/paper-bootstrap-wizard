@@ -1,7 +1,11 @@
 .card{
-    background-color: #FFFFFF;
-    padding: 10px 0 20px;
-    width: 100%;
+    border-radius: $border-radius-extreme;
+    box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: $white-color;
+    color: $card-black-color;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .pick-class-label{
@@ -22,9 +26,6 @@
 
 /*      Here the code for the wizard           */
 
-label{
-    font-weight: 400;
-}
 
 .image-container{
     height: 100vh;
@@ -288,6 +289,12 @@ label{
 
     .btn-finish{
         display: none;
+    }
+
+    label.error:not(.form-control) {
+        color: $danger-color;
+        font-weight: 300;
+        font-size: 0.8em;
     }
 
     .description{
