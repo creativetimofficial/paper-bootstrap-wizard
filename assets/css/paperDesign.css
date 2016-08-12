@@ -834,74 +834,32 @@ input[type="button"]:focus {
   color: #FFFFFF;
 }
 
+.label-default {
+  background-color: #66615b;
+}
+
 .label-primary {
-  border-color: #3472F7;
-  color: #3472F7;
+  background-color: #7A9E9F;
 }
 
 .label-info {
-  border-color: #2CA8FF;
-  color: #2CA8FF;
+  background-color: #68B3C8;
 }
 
 .label-success {
-  border-color: #05AE0E;
-  color: #05AE0E;
+  background-color: #7AC29A;
 }
 
 .label-warning {
-  border-color: #FF9500;
-  color: #FF9500;
+  background-color: #F3BB45;
 }
 
 .label-danger {
-  border-color: #FF3B30;
-  color: #FF3B30;
-}
-
-label.error {
-  color: #FF3B30;
-  margin-top: 5px;
-  margin-bottom: 0;
+  background-color: #EB5E28;
 }
 
 label small {
   color: #999999;
-}
-
-.label-primary.label-fill, .progress-bar, .progress-bar-primary {
-  background-color: #3472F7;
-}
-
-.label-info.label-fill, .progress-bar-info {
-  background-color: #2CA8FF;
-}
-
-.label-success.label-fill, .progress-bar-success {
-  background-color: #05AE0E;
-}
-
-.label-warning.label-fill, .progress-bar-warning {
-  background-color: #FF9500;
-}
-
-.label-danger.label-fill, .progress-bar-danger {
-  background-color: #FF3B30;
-}
-
-.label-default.label-fill {
-  background-color: #999999;
-}
-
-.progress {
-  background-color: #E5E5E5;
-  border-radius: 3px;
-  box-shadow: none;
-  height: 4px;
-}
-
-.progress-thin {
-  height: 2px;
 }
 
 /*            Navigation menu                */
