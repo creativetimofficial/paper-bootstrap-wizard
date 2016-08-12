@@ -831,38 +831,6 @@ input[type="button"]:focus {
   line-height: 1.5em;
 }
 
-.label-icon {
-  padding: 0.4em 0.55em;
-}
-.label-icon i {
-  font-size: 0.8em;
-  line-height: 1;
-}
-
-.label-default {
-  background-color: #66615b;
-}
-
-.label-primary {
-  background-color: #7A9E9F;
-}
-
-.label-info {
-  background-color: #68B3C8;
-}
-
-.label-success {
-  background-color: #7AC29A;
-}
-
-.label-warning {
-  background-color: #F3BB45;
-}
-
-.label-danger {
-  background-color: #EB5E28;
-}
-
 /*            Navigation menu                */
 .nav-pills > li + li {
   margin-left: 0;
