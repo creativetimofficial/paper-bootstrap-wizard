@@ -73,7 +73,20 @@ label{
     &[data-background-color="azzure"]{
         .picture{
             &:hover{
-                border-color: #2CA8FF;
+                border-color: $color-azure;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $color-azure;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $color-azure;
+                }
             }
         }
     }
@@ -81,7 +94,20 @@ label{
     &[data-background-color="green"]{
         .picture{
             &:hover{
-                border-color: #05ae0e;
+                border-color: $color-green;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $color-green;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $color-green;
+                }
             }
         }
     }
@@ -89,7 +115,20 @@ label{
     &[data-background-color="blue"]{
         .picture{
             &:hover{
-                border-color: #3472f7;
+                border-color: $color-blue;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $color-blue;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $color-blue;
+                }
             }
         }
     }
@@ -97,7 +136,20 @@ label{
     &[data-background-color="orange"]{
         .picture{
             &:hover{
-                border-color: #ff9500;
+                border-color: $color-orange;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $color-orange;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $color-orange;
+                }
             }
         }
     }
@@ -105,7 +157,20 @@ label{
     &[data-background-color="red"]{
         .picture{
             &:hover{
-                border-color: #ff3b30;
+                border-color: $color-red;
+            }
+        }
+
+        .nav-pills > li.active a{
+            background-color: $color-red;
+        }
+
+        .choice{
+            &:hover,
+            &.active{
+                .icon{
+                    border-color: $color-red;
+                }
             }
         }
     }
@@ -153,81 +218,6 @@ label{
         background-color: #999999;
         color: #FFFFFF !important;
         font-size: 12px;
-    }
-
-    &[data-background-color="green"]{
-        .nav-pills > li.active a{
-            background-color: #05ae0e;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: #05ae0e;
-                }
-            }
-        }
-    }
-
-    &[data-background-color="azzure"]{
-        .nav-pills > li.active a{
-            background-color: #2CA8FF;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: #2CA8FF;
-                }
-            }
-        }
-    }
-
-    &[data-background-color="blue"]{
-        .nav-pills > li.active a{
-            background-color: #3472f7;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: #3472f7;
-                }
-            }
-        }
-    }
-
-    &[data-background-color="orange"]{
-        .nav-pills > li.active a{
-            background-color: #ff9500;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: #ff9500;
-                }
-            }
-        }
-    }
-
-    &[data-background-color="red"]{
-        .nav-pills > li.active a{
-            background-color: #ff3b30;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: #ff3b30;
-                }
-            }
-        }
     }
 
     .nav-pills > li > a{

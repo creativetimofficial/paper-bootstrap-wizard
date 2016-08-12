@@ -1,54 +1,52 @@
-/*           Font Smoothing      */
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple{
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Muli', "Helvetica", Arial, sans-serif;
 }
 
-/*           Typography          */
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
-    font-weight: 400;
-    margin: 30px 0 15px;
+    font-weight: $font-weight-normal;
+    margin: $margin-large-vertical 0 $margin-base-vertical;
 }
 
 h1, .h1 {
-    font-size: 52px;
+    font-size: $font-size-h1;
 }
 h2, .h2{
-    font-size: 36px;
+    font-size: $font-size-h2;
 }
 h3, .h3{
-    font-size: 28px;
+    font-size: $font-size-h3;
+    line-height: 1.4;
     margin: 20px 0 10px;
 }
 h4, .h4{
-    font-size: 22px;
+    font-size: $font-size-h4;
+    font-weight: $font-weight-bold;
+    line-height: 1.2em;
 }
 h5, .h5 {
-    font-size: 16px;
+    font-size: $font-size-h5;
+    font-weight: $font-weight-normal;
+    line-height: 1.4em;
+    margin-bottom: 15px;
 }
 h6, .h6{
-    font-size: 14px;
-    font-weight: bold;
+    font-size: $font-size-h6;
+    font-weight: $font-weight-bold;
     text-transform: uppercase;
 }
 p{
-    font-size: 16px;
-    line-height: 1.6180em;
+    font-size: $font-paragraph;
+    line-height: $line-height-general;
 }
+
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
-    color: #999999;
-    font-weight: 300;
-    line-height: 1;
+    color: $dark-gray;
+    font-weight: $font-weight-light;
+    line-height: $line-height-general;
 }
+
 h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     font-size: 60%;
-}
-h1 .subtitle{
-    display: block;
-    font-family: 'Grand Hotel',cursive;
-    line-height: 40px;
-    margin: 15px 0 30px;
-
 }
