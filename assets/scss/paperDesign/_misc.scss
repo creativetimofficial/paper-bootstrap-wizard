@@ -1,4 +1,11 @@
 /*     General overwrite     */
+
+body{
+    color: $font-color;
+    font-size: $font-size-base;
+    font-family: 'Muli', Arial, sans-serif;
+}
+
 a{
     color: #2CA8FF;
 }

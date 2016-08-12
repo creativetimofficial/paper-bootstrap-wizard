@@ -74,19 +74,19 @@
     &[data-background-color="azzure"]{
         .picture{
             &:hover{
-                border-color: $color-azure;
+                border-color: $info-color;
             }
         }
 
         .nav-pills > li.active a{
-            background-color: $color-azure;
+            background-color: $info-color;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: $color-azure;
+                    border-color: $info-color;
                 }
             }
         }
@@ -95,19 +95,19 @@
     &[data-background-color="green"]{
         .picture{
             &:hover{
-                border-color: $color-green;
+                border-color: $success-color;
             }
         }
 
         .nav-pills > li.active a{
-            background-color: $color-green;
+            background-color: $success-color;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: $color-green;
+                    border-color: $success-color;
                 }
             }
         }
@@ -137,19 +137,19 @@
     &[data-background-color="orange"]{
         .picture{
             &:hover{
-                border-color: $color-orange;
+                border-color: $warning-color;
             }
         }
 
         .nav-pills > li.active a{
-            background-color: $color-orange;
+            background-color: $warning-color;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: $color-orange;
+                    border-color: $warning-color;
                 }
             }
         }
@@ -158,19 +158,19 @@
     &[data-background-color="red"]{
         .picture{
             &:hover{
-                border-color: $color-red;
+                border-color: $danger-color;
             }
         }
 
         .nav-pills > li.active a{
-            background-color: $color-red;
+            background-color: $danger-color;
         }
 
         .choice{
             &:hover,
             &.active{
                 .icon{
-                    border-color: $color-red;
+                    border-color: $danger-color;
                 }
             }
         }
@@ -205,8 +205,12 @@
     }
 
     .wizard-header h3{
-        font-weight: 200;
         text-align: center;
+    }
+
+    .title{
+        color: $card-black-color;
+        font-weight: $font-weight-light;
     }
 
     .nav-pills > li{
@@ -214,11 +218,17 @@
     }
 
     .nav-pills > li a {
-        border: 0 !important;
+        text-align: center;
+        border: none;
+        background-color: $dark-gray;
+        color: $white-color;
         text-transform: uppercase;
-        background-color: #999999;
-        color: #FFFFFF !important;
-        font-size: 12px;
+
+        &:hover,
+        &:focus{
+            background-color: $dark-gray;
+            outline: 0 !important;
+        }
     }
 
     .nav-pills > li > a{
@@ -227,10 +237,6 @@
             background-color: #999999;
             cursor: default;
         }
-    }
-
-    .btn{
-        text-transform: uppercase;
     }
 
     .nav-pills > li:first-child > a {
@@ -244,8 +250,6 @@
 
     .info-text{
         text-align: center;
-        font-weight: 300;
-        margin: 10px 0 30px;
     }
 
     .choice{
@@ -285,10 +289,6 @@
             left: -10000px;
             z-index: -1;
         }
-    }
-
-    .btn-finish{
-        display: none;
     }
 
     label.error:not(.form-control) {

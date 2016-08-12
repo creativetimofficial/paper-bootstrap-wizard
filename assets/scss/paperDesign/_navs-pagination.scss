@@ -1,13 +1,32 @@
 /*            Navigation menu                */
-.nav-pills > li + li {
-    margin-left: 0;
-}
 
-.nav-pills > li > a {
-    border: 1px solid #2CA8FF;
-    border-radius: 0;
-    color: #2CA8FF;
-    margin-left: -1px;
+.nav-pills {
+    > li + li {
+        margin-left: 0;
+    }
+    > li > a {
+        border: 2px solid $default-color;
+        border-radius: 0;
+        color: $default-color;
+        font-weight: $font-weight-bold;
+        margin-left: -1px;
+        padding: 10px 20px;
+
+    }
+    > li.active > a,
+    > li.active > a:hover,
+    > li.active > a:focus {
+        background-color: $default-color;
+        color: $white-color;
+    }
+    > li:first-child > a{
+        border-radius: 30px 0 0 30px;
+        margin: 0;
+    }
+    > li:last-child > a{
+        border-radius: 0 30px 30px 0;
+    }
+
 }
 
 .nav > li > a:hover, .nav > li > a:focus {
