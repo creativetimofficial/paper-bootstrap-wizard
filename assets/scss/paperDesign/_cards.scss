@@ -71,7 +71,7 @@
         }
     }
 
-    &[data-background-color="azzure"]{
+    &[data-color="azzure"]{
         .picture{
             &:hover{
                 border-color: $info-color;
@@ -92,7 +92,7 @@
         }
     }
 
-    &[data-background-color="green"]{
+    &[data-color="green"]{
         .picture{
             &:hover{
                 border-color: $success-color;
@@ -113,7 +113,7 @@
         }
     }
 
-    &[data-background-color="blue"]{
+    &[data-color="blue"]{
         .picture{
             &:hover{
                 border-color: $color-blue;
@@ -134,7 +134,7 @@
         }
     }
 
-    &[data-background-color="orange"]{
+    &[data-color="orange"]{
         .picture{
             &:hover{
                 border-color: $warning-color;
@@ -155,7 +155,7 @@
         }
     }
 
-    &[data-background-color="red"]{
+    &[data-color="red"]{
         .picture{
             &:hover{
                 border-color: $danger-color;

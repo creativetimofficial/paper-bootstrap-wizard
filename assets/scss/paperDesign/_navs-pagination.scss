@@ -35,7 +35,7 @@
 
 .nav-pills,
 .pagination{
-    &[data-background-color="blue"]{
+    &[data-color="blue"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -49,7 +49,7 @@
         }
     }
 
-    &[data-background-color="azure"]{
+    &[data-color="azure"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -63,7 +63,7 @@
         }
     }
 
-    &[data-background-color="green"]{
+    &[data-color="green"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -77,7 +77,7 @@
         }
     }
 
-    &[data-background-color="orange"]{
+    &[data-color="orange"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -91,7 +91,7 @@
         }
     }
 
-    &[data-background-color="red"]{
+    &[data-color="red"]{
         > li.active > a,
         > li.active > a:hover,
         > li.active > a:focus,
@@ -108,27 +108,27 @@
 
 
 .nav-pills{
-    &[data-background-color="blue"] > li > a {
+    &[data-color="blue"] > li > a {
         border: 1px solid #3472F7;
         color: #3472F7;
     }
 
-    &[data-background-color="azure"] > li > a {
+    &[data-color="azure"] > li > a {
         border: 1px solid #2CA8FF;
         color: #2CA8FF;
     }
 
-    &[data-background-color="green"] > li > a {
+    &[data-color="green"] > li > a {
         border: 1px solid #05AE0E;
         color: #05AE0E;
     }
 
-    &[data-background-color="orange"] > li > a {
+    &[data-color="orange"] > li > a {
         border: 1px solid #FF9500;
         color: #FF9500;
     }
 
-    &[data-background-color="red"] > li > a {
+    &[data-color="red"] > li > a {
         border: 1px solid #FF3B30;
         color: #FF3B30;
     }
