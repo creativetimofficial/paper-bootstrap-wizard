@@ -1086,6 +1086,10 @@ input[type="button"]:focus {
   border: 0 none;
 }
 
+.wizard-navigation {
+  position: relative;
+}
+
 .tooltip {
   font-size: 14px;
   font-weight: bold;
