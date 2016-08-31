@@ -1261,6 +1261,21 @@ input[type="button"]:focus {
 .wizard-card[data-color="azzure"] .choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
   border-color: #7A9E9F;
 }
+.wizard-card[data-color="azzure"] .tab-animation {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  top: -4px;
+  left: 0px;
+  border-radius: 4px;
+  background-color: #7A9E9F;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
+}
 .wizard-card[data-color="green"] .picture:hover {
   border-color: #7AC29A;
 }
@@ -1269,6 +1284,21 @@ input[type="button"]:focus {
 }
 .wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
   border-color: #7AC29A;
+}
+.wizard-card[data-color="green"] .tab-animation {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  top: -4px;
+  left: 0px;
+  border-radius: 4px;
+  background-color: #7AC29A;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
 }
 .wizard-card[data-color="blue"] .picture:hover {
   border-color: #68B3C8;
@@ -1279,6 +1309,21 @@ input[type="button"]:focus {
 .wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
   border-color: #68B3C8;
 }
+.wizard-card[data-color="blue"] .tab-animation {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  top: -4px;
+  left: 0px;
+  border-radius: 4px;
+  background-color: #68B3C8;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
+}
 .wizard-card[data-color="orange"] .picture:hover {
   border-color: #F3BB45;
 }
@@ -1288,6 +1333,21 @@ input[type="button"]:focus {
 .wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
   border-color: #F3BB45;
 }
+.wizard-card[data-color="orange"] .tab-animation {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  top: -4px;
+  left: 0px;
+  border-radius: 4px;
+  background-color: #F3BB45;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
+}
 .wizard-card[data-color="red"] .picture:hover {
   border-color: #EB5E28;
 }
@@ -1296,6 +1356,21 @@ input[type="button"]:focus {
 }
 .wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
   border-color: #EB5E28;
+}
+.wizard-card[data-color="red"] .tab-animation {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+  -webkit-font-smoothing: subpixel-antialiased;
+  top: -4px;
+  left: 0px;
+  border-radius: 4px;
+  background-color: #EB5E28;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 500;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;
