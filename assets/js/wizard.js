@@ -18,14 +18,9 @@ searchVisible = 0;
         		      minlength: 3
         		    },
         		    email: {
-        		      required: true,
-        		      minlength: 3,
+        		      required: true
         		    }
                 },
-
-                errorPlacement: function(error, element) {
-                    $(element).parent('div').addClass('has-error');
-                 }
         	});
 
             // Wizard Initialization
@@ -172,9 +167,9 @@ searchVisible = 0;
             $current = index + 1;
 
             if($current == 1){
-                move_distance -= 8;
+                move_distance -= 9;
             } else if($current == total_steps){
-                move_distance += 8;
+                move_distance += 9;
             }
 
             $wizard.find('.moving-tab').css('width', step_width);

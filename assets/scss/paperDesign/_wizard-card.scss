@@ -107,8 +107,9 @@
         text-align: center;
         border: none;
         background-color: $dark-gray;
+        line-height: 15px;
         color: $white-color;
-        text-transform: uppercase;
+        // text-transform: uppercase;
 
         &:hover,
         &:focus{

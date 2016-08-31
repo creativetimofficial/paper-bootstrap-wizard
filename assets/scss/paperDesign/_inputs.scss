@@ -34,27 +34,29 @@
         @include box-shadow(none);
     }
 
-    .has-success &,
-    &.valid{
-        //background-color: $white-bg;
-        color: $font-color;
-        border-color: $gray-input-outline;
-    }
-    .has-success &:focus,
-    &.valid:focus{
-        background-color: $white-bg;
-        border-color: $success-color;
-    }
     .has-error &,
     &.error{
         background-color: $danger-input-bg;
         color: $danger-color;
         border-color: $danger-color;
     }
+
+    .has-success &,
+    &.valid{
+        //background-color: $white-bg;
+        color: $font-color;
+        border-color: $gray-input-outline;
+    }
+    
     .has-error &:focus,
     &.error:focus{
         background-color: $white-bg;
         border-color: $danger-color;
+    }
+    .has-success &:focus,
+    &.valid:focus{
+        background-color: $white-bg;
+        border-color: $success-color;
     }
 
     & + .form-control-feedback{
