@@ -1454,7 +1454,7 @@ input[type="button"]:focus {
 .wizard-card .wizard-header h3 {
   text-align: center;
 }
-.wizard-card .title {
+.wizard-card .wizard-title {
   color: #252422;
   font-weight: 300;
   margin: 0;
@@ -1565,5 +1565,3 @@ input[type="button"]:focus {
     min-width: 140px;
   }
 }
-
-/*# sourceMappingURL=paperDesign.css.map */
