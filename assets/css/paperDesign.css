@@ -1168,6 +1168,7 @@ input[type="button"]:focus {
   min-height: 410px;
   transition: all 0.2s;
   -webkit-transition: all 0.2s;
+  box-shadow: 0 20px 16px -15px rgba(165, 165, 165, 0.57);
 }
 .wizard-card .picture-container {
   position: relative;
