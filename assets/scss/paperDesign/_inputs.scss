@@ -1,14 +1,14 @@
 .form-control::-moz-placeholder{
-   @include placeholder($medium-gray,1);
+   color: $form-placeholder-color;
 }
 .form-control:-moz-placeholder{
-   @include placeholder($medium-gray,1);
+   color: $form-placeholder-color;
 }
 .form-control::-webkit-input-placeholder{
-   @include placeholder($medium-gray,1);
+   color: $form-placeholder-color;
 }
 .form-control:-ms-input-placeholder{
-   @include placeholder($medium-gray,1);
+   color: $form-placeholder-color;
 }
 
 .form-control {

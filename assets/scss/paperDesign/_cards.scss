@@ -204,13 +204,28 @@
         display: none;
     }
 
-    .wizard-header h3{
-        text-align: center;
+    .wizard-header{
+        padding: 20px 15px;
+        position: relative;
+        border-radius: 3px 3px 0 0;
+        z-index: 3;
+
+        h3{
+            text-align: center;
+        }
     }
 
     .title{
         color: $card-black-color;
         font-weight: $font-weight-light;
+        margin: 0;
+    }
+
+    .category{
+        font-size: 14px;
+        font-weight: 400;
+        color: #9A9A9A;
+        margin-bottom: 0px;
     }
 
     .nav-pills > li{
@@ -250,6 +265,7 @@
 
     .info-text{
         text-align: center;
+        padding-bottom: 20px;
     }
 
     .choice{
