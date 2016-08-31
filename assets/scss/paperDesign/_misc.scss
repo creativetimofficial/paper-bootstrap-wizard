@@ -51,3 +51,70 @@ input[type="button"]:focus {
     padding-top: 100px;
     z-index: 3;
 }
+
+.made-with-mk{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: fixed;
+    z-index: 555;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 30px;
+    background-color: rgba(16, 16, 16, 0.35);
+    border: 1px solid rgba(255,255,255,.15);
+    color: $white-color;
+    cursor: pointer;
+    padding: 10px 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transition: .55s cubic-bezier(.6,0,.4,1);
+    -moz-transition: .55s cubic-bezier(.6,0,.4,1);
+    -o-transition: .55s cubic-bezier(.6,0,.4,1);
+    transition: .55s cubic-bezier(.6,0,.4,1);
+
+
+    &:hover,
+    &:active,
+    &:focus{
+        width: 218px;
+        color: $white-color;
+        transition-duration: .55s;
+        padding: 10px 19px;
+
+        .made-with{
+            opacity: 1;
+        }
+    }
+
+    .brand,
+    .made-with{
+        float: left;
+    }
+    .brand{
+        position: relative;
+        top: 4px;
+        letter-spacing: 1px;
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .made-with{
+        color: rgba(255,255,255, .6);
+        position: absolute;
+        left: 58px;
+        top: 14px;
+        opacity: 0;
+        margin: 0;
+        -webkit-transition: .55s cubic-bezier(.6,0,.4,1);
+        -moz-transition: .55s cubic-bezier(.6,0,.4,1);
+        -o-transition: .55s cubic-bezier(.6,0,.4,1);
+        transition: .55s cubic-bezier(.6,0,.4,1);
+
+        strong{
+            font-weight: 400;
+            color: rgba(255,255,255, .9);
+        }
+    }
+}
