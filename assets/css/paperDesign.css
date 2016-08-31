@@ -1178,7 +1178,7 @@ input[type="button"]:focus {
 .wizard-card .picture {
   width: 106px;
   height: 106px;
-  background-color: #999999;
+  background-color: #d8d1c9;
   border: 4px solid #CCCCCC;
   color: #FFFFFF;
   border-radius: 50%;
@@ -1189,6 +1189,9 @@ input[type="button"]:focus {
 }
 .wizard-card .picture:hover {
   border-color: #2ca8ff;
+}
+.wizard-card .picture-src {
+  width: 100%;
 }
 .wizard-card[data-color="azzure"] .picture:hover {
   border-color: #68B3C8;
@@ -1243,9 +1246,6 @@ input[type="button"]:focus {
   opacity: 0 !important;
   position: absolute;
   top: 0;
-  width: 100%;
-}
-.wizard-card .picture-src {
   width: 100%;
 }
 .wizard-card .tab-content {
