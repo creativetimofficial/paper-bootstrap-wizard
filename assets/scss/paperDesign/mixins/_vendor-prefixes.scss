@@ -10,3 +10,24 @@
     -ms-transition: all $time $type;
     transition: all $time $type;
 }
+
+@mixin set-wizard-color($color) {
+    .picture{
+        &:hover{
+            border-color: $color;
+        }
+    }
+
+    .nav-pills > li.active a{
+        background-color: $color;
+    }
+
+    .choice{
+        &:hover,
+        &.active{
+            .icon{
+                border-color: $color;
+            }
+        }
+    }
+}

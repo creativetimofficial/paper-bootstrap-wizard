@@ -33,108 +33,22 @@
     }
 
     &[data-color="azzure"]{
-        .picture{
-            &:hover{
-                border-color: $info-color;
-            }
-        }
-
-        .nav-pills > li.active a{
-            background-color: $info-color;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $info-color;
-                }
-            }
-        }
+        @include set-wizard-color($primary-color);
     }
 
     &[data-color="green"]{
-        .picture{
-            &:hover{
-                border-color: $success-color;
-            }
-        }
-
-        .nav-pills > li.active a{
-            background-color: $success-color;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $success-color;
-                }
-            }
-        }
+        @include set-wizard-color($success-color);
     }
-
     &[data-color="blue"]{
-        .picture{
-            &:hover{
-                border-color: $color-blue;
-            }
-        }
-
-        .nav-pills > li.active a{
-            background-color: $color-blue;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $color-blue;
-                }
-            }
-        }
+        @include set-wizard-color($info-color);
     }
 
     &[data-color="orange"]{
-        .picture{
-            &:hover{
-                border-color: $warning-color;
-            }
-        }
-
-        .nav-pills > li.active a{
-            background-color: $warning-color;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $warning-color;
-                }
-            }
-        }
+        @include set-wizard-color($warning-color);
     }
 
     &[data-color="red"]{
-        .picture{
-            &:hover{
-                border-color: $danger-color;
-            }
-        }
-
-        .nav-pills > li.active a{
-            background-color: $danger-color;
-        }
-
-        .choice{
-            &:hover,
-            &.active{
-                .icon{
-                    border-color: $danger-color;
-                }
-            }
-        }
+        @include set-wizard-color($danger-color);
     }
 
     .picture input[type="file"] {

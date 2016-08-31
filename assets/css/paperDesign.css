@@ -1253,13 +1253,13 @@ input[type="button"]:focus {
   width: 100%;
 }
 .wizard-card[data-color="azzure"] .picture:hover {
-  border-color: #68B3C8;
+  border-color: #7A9E9F;
 }
 .wizard-card[data-color="azzure"] .nav-pills > li.active a {
-  background-color: #68B3C8;
+  background-color: #7A9E9F;
 }
 .wizard-card[data-color="azzure"] .choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
-  border-color: #68B3C8;
+  border-color: #7A9E9F;
 }
 .wizard-card[data-color="green"] .picture:hover {
   border-color: #7AC29A;
@@ -1271,13 +1271,13 @@ input[type="button"]:focus {
   border-color: #7AC29A;
 }
 .wizard-card[data-color="blue"] .picture:hover {
-  border-color: #447DF7;
+  border-color: #68B3C8;
 }
 .wizard-card[data-color="blue"] .nav-pills > li.active a {
-  background-color: #447DF7;
+  background-color: #68B3C8;
 }
 .wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
-  border-color: #447DF7;
+  border-color: #68B3C8;
 }
 .wizard-card[data-color="orange"] .picture:hover {
   border-color: #F3BB45;
