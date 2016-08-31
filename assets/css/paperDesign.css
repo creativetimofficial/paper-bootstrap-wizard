@@ -73,6 +73,12 @@
   border-right: 0;
 }
 
+label.error:not(.form-control) {
+  color: #EB5E28;
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
 .input-lg {
   height: 55px;
   padding: 11px 30px;
@@ -752,7 +758,6 @@ input[type="button"]:focus {
   margin-bottom: 5px;
 }
 
-/*           Labels & Progress-bar              */
 .label {
   padding: 3px 8px;
   border-radius: 12px;
@@ -763,8 +768,13 @@ input[type="button"]:focus {
   display: inline-block;
   line-height: 1.5em;
 }
-.label.label-fill {
-  color: #FFFFFF;
+
+.label-icon {
+  padding: 0.4em 0.55em;
+}
+.label-icon i {
+  font-size: 0.8em;
+  line-height: 1;
 }
 
 .label-default {
@@ -789,18 +799,6 @@ input[type="button"]:focus {
 
 .label-danger {
   background-color: #EB5E28;
-}
-
-label small {
-  font-size: 14px;
-  font-weight: 400;
-  color: #9A9A9A;
-}
-
-label.error:not(.form-control) {
-  color: #EB5E28;
-  font-weight: 300;
-  font-size: 0.8em;
 }
 
 /*            Navigation menu                */
@@ -1441,5 +1439,3 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small
 h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
   font-size: 60%;
 }
-
-/*# sourceMappingURL=paperDesign.css.map */
