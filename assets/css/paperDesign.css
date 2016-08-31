@@ -1256,12 +1256,12 @@ input[type="button"]:focus {
   border-color: #7A9E9F;
 }
 .wizard-card[data-color="azzure"] .nav-pills > li.active a {
-  background-color: #7A9E9F;
+  background-color: inherit;
 }
 .wizard-card[data-color="azzure"] .choice:hover .icon, .wizard-card[data-color="azzure"] .choice.active .icon {
   border-color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .tab-animation {
+.wizard-card[data-color="azzure"] .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;
@@ -1280,12 +1280,12 @@ input[type="button"]:focus {
   border-color: #7AC29A;
 }
 .wizard-card[data-color="green"] .nav-pills > li.active a {
-  background-color: #7AC29A;
+  background-color: inherit;
 }
 .wizard-card[data-color="green"] .choice:hover .icon, .wizard-card[data-color="green"] .choice.active .icon {
   border-color: #7AC29A;
 }
-.wizard-card[data-color="green"] .tab-animation {
+.wizard-card[data-color="green"] .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;
@@ -1304,12 +1304,12 @@ input[type="button"]:focus {
   border-color: #68B3C8;
 }
 .wizard-card[data-color="blue"] .nav-pills > li.active a {
-  background-color: #68B3C8;
+  background-color: inherit;
 }
 .wizard-card[data-color="blue"] .choice:hover .icon, .wizard-card[data-color="blue"] .choice.active .icon {
   border-color: #68B3C8;
 }
-.wizard-card[data-color="blue"] .tab-animation {
+.wizard-card[data-color="blue"] .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;
@@ -1328,12 +1328,12 @@ input[type="button"]:focus {
   border-color: #F3BB45;
 }
 .wizard-card[data-color="orange"] .nav-pills > li.active a {
-  background-color: #F3BB45;
+  background-color: inherit;
 }
 .wizard-card[data-color="orange"] .choice:hover .icon, .wizard-card[data-color="orange"] .choice.active .icon {
   border-color: #F3BB45;
 }
-.wizard-card[data-color="orange"] .tab-animation {
+.wizard-card[data-color="orange"] .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;
@@ -1352,12 +1352,12 @@ input[type="button"]:focus {
   border-color: #EB5E28;
 }
 .wizard-card[data-color="red"] .nav-pills > li.active a {
-  background-color: #EB5E28;
+  background-color: inherit;
 }
 .wizard-card[data-color="red"] .choice:hover .icon, .wizard-card[data-color="red"] .choice.active .icon {
   border-color: #EB5E28;
 }
-.wizard-card[data-color="red"] .tab-animation {
+.wizard-card[data-color="red"] .moving-tab {
   position: absolute;
   text-align: center;
   padding: 12px;

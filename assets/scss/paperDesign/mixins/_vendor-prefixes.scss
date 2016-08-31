@@ -19,7 +19,7 @@
     }
 
     .nav-pills > li.active a{
-        background-color: $color;
+        background-color: inherit;
     }
 
     .choice{
@@ -31,7 +31,7 @@
         }
     }
 
-    .tab-animation{
+    .moving-tab{
         position: absolute;
         text-align: center;
         padding: 12px;
