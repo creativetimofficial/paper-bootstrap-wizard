@@ -1505,7 +1505,7 @@ input[type="button"]:focus {
 }
 .wizard-card .nav-pills > li > a:focus, .wizard-card .nav-pills > li > a:hover {
   background-color: #999999;
-  cursor: default;
+  cursor: pointer;
 }
 .wizard-card .nav-pills > li:first-child > a {
   border-radius: 0;
