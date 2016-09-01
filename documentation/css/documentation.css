@@ -10,6 +10,15 @@
     background-color: #FFFFFF;
 }
 
+.navbar-transparent {
+    padding-top: 15px;
+    background-color: transparent;
+}
+
+.navbar .btn-simple {
+    font-size: 16px;
+}
+
 .footer {
   background-attachment: fixed;
   position: relative;
@@ -207,7 +216,7 @@ pre.prettyprint{
 }
 .logo-container{
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 .logo-container .logo img{
     width: 100%;
