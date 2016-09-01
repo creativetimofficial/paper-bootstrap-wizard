@@ -15,7 +15,7 @@
         width: 106px;
         height: 106px;
         background-color: #d8d1c9;
-        border: 4px solid #CCCCCC;
+        border: 4px solid transparent;
         color: #FFFFFF;
         border-radius: 50%;
         margin: 5px auto;
@@ -76,7 +76,7 @@
     }
 
     .wizard-header{
-        padding: 20px 15px;
+        padding: 15px 15px 25px 15px;
         position: relative;
         border-radius: 3px 3px 0 0;
         z-index: 3;
@@ -143,7 +143,7 @@
     .choice{
         text-align: center;
         cursor: pointer;
-        margin-top: 20px;
+        margin-top: 35px;
 
         .icon{
             text-align: center;
@@ -160,8 +160,8 @@
         }
 
         i{
-            font-size: 30px;
-            line-height: 111px;
+            font-size: 25px;
+            line-height: 45px;
         }
 
         &:hover,

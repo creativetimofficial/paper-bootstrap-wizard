@@ -23,10 +23,9 @@
     }
 
     .choice{
-        &:hover,
         &.active{
-            .icon{
-                border-color: $color;
+            .card-radios{
+                background-color:$color;
             }
         }
     }
@@ -35,12 +34,10 @@
         position: absolute;
         text-align: center;
         padding: 12px;
-        // font-size: 12px;
-        // text-transform: uppercase;
         -webkit-font-smoothing: subpixel-antialiased;
         top:-5px;
         left: 0px;
-        border-radius: 20px;
+        border-radius: 6px;
         background-color: $color;
         color: $white-color;
         cursor: pointer;
