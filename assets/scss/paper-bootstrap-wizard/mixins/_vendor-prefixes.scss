@@ -11,6 +11,14 @@
     transition: all $time $type;
 }
 
+@mixin translateY($value) {
+    -webkit-transform: translateY($value);
+    -moz-transform: translateY($value);
+    -o-transition: translateY($value);
+    -ms-transform: translateY($value);
+    transform: translateY($value);
+}
+
 @mixin set-wizard-color($color) {
     .picture{
         &:hover{
