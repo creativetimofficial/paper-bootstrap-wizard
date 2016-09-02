@@ -114,13 +114,6 @@
         &:focus{
             background-color: $gray-input-bg;
             outline: 0 !important;
-        }
-    }
-
-    .nav-pills > li > a{
-        &:focus,
-        &:hover{
-            background-color: $gray-input-bg;
             cursor: pointer;
         }
     }

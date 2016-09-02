@@ -1507,9 +1507,6 @@ input[type="button"]:focus {
 .wizard-card .nav-pills > li a:hover, .wizard-card .nav-pills > li a:focus {
   background-color: #F3F2EE;
   outline: 0 !important;
-}
-.wizard-card .nav-pills > li > a:focus, .wizard-card .nav-pills > li > a:hover {
-  background-color: #F3F2EE;
   cursor: pointer;
 }
 .wizard-card .nav-pills > li:first-child > a {
