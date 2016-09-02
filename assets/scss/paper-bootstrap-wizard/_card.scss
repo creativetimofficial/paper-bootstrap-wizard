@@ -9,9 +9,9 @@
     z-index: 1;
 
     .card-radios{
-        background-color: #b9b9b9;
+        background-color: $gray-input-bg;
         box-shadow: none;
-        color: $white-color;
+        color: $form-placeholder-color;
     }
 
     .card-hover-effect{

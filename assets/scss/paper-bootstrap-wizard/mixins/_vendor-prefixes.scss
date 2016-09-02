@@ -19,13 +19,14 @@
     }
 
     .nav-pills > li.active a{
-        background-color: #9A9A9A;
+        background-color: $gray-input-bg;
     }
 
     .choice{
         &.active{
             .card-radios{
                 background-color:$color;
+                color: $white-color;
             }
         }
     }

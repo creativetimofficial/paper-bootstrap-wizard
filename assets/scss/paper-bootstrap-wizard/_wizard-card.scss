@@ -106,13 +106,13 @@
     .nav-pills > li a {
         text-align: center;
         border: none;
-        background-color: $dark-gray;
+        background-color: $gray-input-bg;
         line-height: 15px;
-        color: $white-color;
+        color: $form-placeholder-color;
 
         &:hover,
         &:focus{
-            background-color: $dark-gray;
+            background-color: $gray-input-bg;
             outline: 0 !important;
         }
     }
@@ -120,7 +120,7 @@
     .nav-pills > li > a{
         &:focus,
         &:hover{
-            background-color: #999999;
+            background-color: $gray-input-bg;
             cursor: pointer;
         }
     }
@@ -159,8 +159,8 @@
         }
 
         i{
-            font-size: 25px;
-            line-height: 45px;
+            font-size: 33px;
+            line-height: 65px;
         }
 
         &:hover,
