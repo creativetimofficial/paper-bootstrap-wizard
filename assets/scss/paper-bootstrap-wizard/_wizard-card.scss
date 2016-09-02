@@ -1,7 +1,5 @@
 .wizard-card{
     min-height: 410px;
-    transition: all 0.2s;
-    -webkit-transition: all 0.2s;
     box-shadow: 0 20px 16px -15px rgba(165, 165, 165, 0.57);
 
 
@@ -97,34 +95,6 @@
         font-weight: 400;
         color: #9A9A9A;
         margin-bottom: 0px;
-    }
-
-    .nav-pills > li{
-        text-align: center;
-    }
-
-    .nav-pills > li a {
-        text-align: center;
-        border: none;
-        background-color: $gray-input-bg;
-        line-height: 15px;
-        color: $form-placeholder-color;
-
-        &:hover,
-        &:focus{
-            background-color: $gray-input-bg;
-            outline: 0 !important;
-            cursor: pointer;
-        }
-    }
-
-    .nav-pills > li:first-child > a {
-        border-radius: 0;
-        margin: 0;
-    }
-
-    .nav-pills > li:last-child > a{
-        border-radius: 0;
     }
 
     .info-text{

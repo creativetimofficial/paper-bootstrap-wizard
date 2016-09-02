@@ -1,209 +1,36 @@
 /*            Navigation menu                */
 
 .nav-pills {
+    background-color: $gray-input-bg;
+
     > li + li {
         margin-left: 0;
     }
     > li > a {
-        border: 2px solid $default-color;
+        border: none;
+        text-align: center;
         border-radius: 0;
-        color: $default-color;
+        color: $form-placeholder-color;
         font-weight: $font-weight-bold;
-        margin-left: -1px;
+        line-height: 15px;
         padding: 10px 20px;
 
     }
+
     > li.active > a,
     > li.active > a:hover,
     > li.active > a:focus {
-        background-color: $default-color;
-        color: $white-color;
-    }
-    > li:first-child > a{
-        border-radius: 30px 0 0 30px;
-        margin: 0;
-    }
-    > li:last-child > a{
-        border-radius: 0 30px 30px 0;
+        background-color: inherit;
+        color: $form-placeholder-color;
     }
 
-}
+    > li > a{
 
-.nav > li > a:hover, .nav > li > a:focus {
-    background-color: #F5F5F5;
-}
-
-.nav-pills,
-.pagination{
-    &[data-color="blue"]{
-        > li.active > a,
-        > li.active > a:hover,
-        > li.active > a:focus,
-        > .active > a,
-        > .active > span,
-        > .active > a:hover,
-        > .active > span:hover,
-        > .active > a:focus,
-        > .active > span:focus{
-            background-color: #3472F7;
+        &:hover,
+        &:focus{
+            background-color: $gray-input-bg;
+            outline: 0 !important;
+            cursor: pointer;
         }
     }
-
-    &[data-color="azure"]{
-        > li.active > a,
-        > li.active > a:hover,
-        > li.active > a:focus,
-        > .active > a,
-        > .active > span,
-        > .active > a:hover,
-        > .active > span:hover,
-        > .active > a:focus,
-        > .active > span:focus{
-            background-color: #2CA8FF;
-        }
-    }
-
-    &[data-color="green"]{
-        > li.active > a,
-        > li.active > a:hover,
-        > li.active > a:focus,
-        > .active > a,
-        > .active > span,
-        > .active > a:hover,
-        > .active > span:hover,
-        > .active > a:focus,
-        > .active > span:focus{
-            background-color: #05AE0E;
-        }
-    }
-
-    &[data-color="orange"]{
-        > li.active > a,
-        > li.active > a:hover,
-        > li.active > a:focus,
-        > .active > a,
-        > .active > span,
-        > .active > a:hover,
-        > .active > span:hover,
-        > .active > a:focus,
-        > .active > span:focus{
-            background-color: #FF9500;
-        }
-    }
-
-    &[data-color="red"]{
-        > li.active > a,
-        > li.active > a:hover,
-        > li.active > a:focus,
-        > .active > a,
-        > .active > span,
-        > .active > a:hover,
-        > .active > span:hover,
-        > .active > a:focus,
-        > .active > span:focus{
-            background-color: #FF3B30;
-        }
-    }
-}
-
-
-.nav-pills{
-    &[data-color="blue"] > li > a {
-        border: 1px solid #3472F7;
-        color: #3472F7;
-    }
-
-    &[data-color="azure"] > li > a {
-        border: 1px solid #2CA8FF;
-        color: #2CA8FF;
-    }
-
-    &[data-color="green"] > li > a {
-        border: 1px solid #05AE0E;
-        color: #05AE0E;
-    }
-
-    &[data-color="orange"] > li > a {
-        border: 1px solid #FF9500;
-        color: #FF9500;
-    }
-
-    &[data-color="red"] > li > a {
-        border: 1px solid #FF3B30;
-        color: #FF3B30;
-    }
-
-    > li.active > a,
-    > li.active > a:hover,
-    > li.active > a:focus{
-        background-color: #2CA8FF;
-        color: #FFFFFF;
-    }
-
-    > li:first-child > a{
-        border-radius: 4px 0 0 4px;
-        margin: 0;
-    }
-
-    > li:last-child > a{
-        border-radius: 0 4px 4px 0;
-    }
-
-}
-
-
-.pagination{
-    &.no-border{
-        > li > a,
-        > li > span{
-            border: 0;
-        }
-    }
-
-    > li > a,
-    > li > span,
-    > li:first-child > a,
-    > li:first-child > span,
-    > li:last-child > a,
-    > li:last-child > span{
-        border-radius: 50%;
-        margin: 0 2px;
-        color: #777777;
-    }
-
-    > li.active > a,
-    > li.active > span,
-    > li.active > a:hover,
-    > li.active > span:hover,
-    > li.active > a:focus,
-    > li.active > span:focus{
-        background-color: #2CA8FF;
-        border: 0;
-        color: #FFFFFF;
-        padding: 7px 13px;
-    }
-}
-
-.text-primary, .text-primary:hover{
-    color: #1D62F0;
-}
-.text-info, .text-info:hover{
-    color: #109CFF;
-}
-.text-success, .text-success:hover{
-    color: #0C9C14;
-}
-.text-warning, .text-warning:hover{
-    color: #ED8D00;
-}
-.text-danger, .text-danger:hover{
-    color: #EE2D20;
-}
-.modal-header {
-    border: 0 none;
-
-}
-
-.wizard-navigation{
-    position: relative;
 }

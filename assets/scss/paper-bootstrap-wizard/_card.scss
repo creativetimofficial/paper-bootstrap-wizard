@@ -8,10 +8,10 @@
     position: relative;
     z-index: 1;
 
-    .card-radios{
+    .card-checkboxes{
         background-color: $gray-input-bg;
         box-shadow: none;
-        color: $form-placeholder-color;
+        color: rgba(0,0,0, 0.5);
     }
 
     .card-hover-effect{
@@ -26,19 +26,4 @@
             @include translateY(-10px);
         }
     }
-}
-
-.pick-class-label{
-    border-radius: 8px;
-    color: #ffffff;
-    cursor: pointer;
-    display: inline;
-    font-size: 75%;
-    font-weight: bold;
-    line-height: 1;
-    margin-right: 10px;
-    padding: 15px 23px;
-    text-align: center;
-    vertical-align: baseline;
-    white-space: nowrap;
 }

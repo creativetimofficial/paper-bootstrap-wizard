@@ -26,13 +26,9 @@
         }
     }
 
-    .nav-pills > li.active a{
-        background-color: $gray-input-bg;
-    }
-
     .choice{
         &.active{
-            .card-radios{
+            .card-checkboxes{
                 background-color:$color;
                 color: $white-color;
             }
