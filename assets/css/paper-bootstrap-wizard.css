@@ -309,7 +309,7 @@ input[type="button"]:focus {
   z-index: 3;
 }
 
-.made-with-mk {
+.made-with-pk {
   width: 50px;
   height: 50px;
   display: block;
@@ -330,20 +330,20 @@ input[type="button"]:focus {
   -o-transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
   transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
 }
-.made-with-mk:hover, .made-with-mk:active, .made-with-mk:focus {
+.made-with-pk:hover, .made-with-pk:active, .made-with-pk:focus {
   width: 218px;
   color: #FFFFFF;
   transition-duration: .55s;
   padding: 10px 19px;
 }
-.made-with-mk:hover .made-with, .made-with-mk:active .made-with, .made-with-mk:focus .made-with {
+.made-with-pk:hover .made-with, .made-with-pk:active .made-with, .made-with-pk:focus .made-with {
   opacity: 1;
 }
-.made-with-mk .brand,
-.made-with-mk .made-with {
+.made-with-pk .brand,
+.made-with-pk .made-with {
   float: left;
 }
-.made-with-mk .brand {
+.made-with-pk .brand {
   position: relative;
   top: 4px;
   letter-spacing: 1px;
@@ -351,7 +351,7 @@ input[type="button"]:focus {
   font-size: 16px;
   font-weight: 600;
 }
-.made-with-mk .made-with {
+.made-with-pk .made-with {
   color: rgba(255, 255, 255, 0.6);
   position: absolute;
   left: 58px;
@@ -363,7 +363,7 @@ input[type="button"]:focus {
   -o-transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
   transition: 0.55s cubic-bezier(0.6, 0, 0.4, 1);
 }
-.made-with-mk .made-with strong {
+.made-with-pk .made-with strong {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.9);
 }
