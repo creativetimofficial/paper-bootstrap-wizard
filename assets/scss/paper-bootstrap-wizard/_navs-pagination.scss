@@ -16,26 +16,13 @@
     }
     > li > a {
         padding: 0;
-        max-width: 64px;
-        max-height: 30px;
+        max-width: 69px;
         margin: 0 auto;
         color: $form-placeholder-color;
         border-radius: 50%;
         max-height: 30px;
         position: relative;
         top: -15px;
-
-        &:after{
-            content: '';
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: antiquewhite;
-            display: inline-block;
-            position: absolute;
-            right: -1px;
-            top: -9px;
-        }
 
         .icon-circle{
             font-size: 17px;
@@ -44,20 +31,19 @@
             border-radius: 50%;
             color: $form-placeholder-color;
             font-weight: $font-weight-bold;
-            line-height: 70px;
             width: 70px;
             height: 70px;
             background-color: $white-color;
             margin: 0 auto;
             position: relative;
-            top: -14px;
+            top: -19px;
 
             [class*="ti-"]{
                 position: absolute;
                 z-index: 1;
-                left: 0;
+                left: 1px;
                 right: 0;
-                top: 20px;
+                top: 21px;
             }
         }
 
@@ -75,5 +61,18 @@
     > li.active > a:focus {
         background-color: $white-color;
         color: $form-placeholder-color;
+
+        .scale-div{
+            content: '';
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: antiquewhite;
+            display: inline-block;
+            position: absolute;
+            right: 4px;
+            top: -14px;
+            transform: scale(1);
+        }
     }
 }

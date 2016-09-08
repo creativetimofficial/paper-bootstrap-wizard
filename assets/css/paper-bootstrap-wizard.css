@@ -955,25 +955,13 @@ input[type="button"]:focus {
 }
 .nav-pills > li > a {
   padding: 0;
-  max-width: 64px;
-  max-height: 30px;
+  max-width: 69px;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   max-height: 30px;
   position: relative;
   top: -15px;
-}
-.nav-pills > li > a:after {
-  content: '';
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background-color: antiquewhite;
-  display: inline-block;
-  position: absolute;
-  right: -1px;
-  top: -9px;
 }
 .nav-pills > li > a .icon-circle {
   font-size: 17px;
@@ -982,20 +970,19 @@ input[type="button"]:focus {
   border-radius: 50%;
   color: rgba(0, 0, 0, 0.2);
   font-weight: 600;
-  line-height: 70px;
   width: 70px;
   height: 70px;
   background-color: #FFFFFF;
   margin: 0 auto;
   position: relative;
-  top: -14px;
+  top: -19px;
 }
 .nav-pills > li > a .icon-circle [class*="ti-"] {
   position: absolute;
   z-index: 1;
-  left: 0;
+  left: 1px;
   right: 0;
-  top: 20px;
+  top: 21px;
 }
 .nav-pills > li > a:hover, .nav-pills > li > a:focus {
   background-color: #FFFFFF;
@@ -1008,6 +995,20 @@ input[type="button"]:focus {
 .nav-pills > li.active > a:focus {
   background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.2);
+}
+.nav-pills > li.active > a .scale-div,
+.nav-pills > li.active > a:hover .scale-div,
+.nav-pills > li.active > a:focus .scale-div {
+  content: '';
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  display: inline-block;
+  position: absolute;
+  right: 4px;
+  top: -14px;
+  transform: scale(1);
 }
 
 .tooltip {

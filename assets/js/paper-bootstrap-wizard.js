@@ -58,6 +58,7 @@ transparent = true;
 
 
                    navigation.find('li').css('width',$width + '%');
+
                },
 
                 onTabClick : function(tab, navigation, index){
@@ -86,6 +87,12 @@ transparent = true;
                         $($wizard).find('.btn-next').show();
                         $($wizard).find('.btn-finish').hide();
                     }
+
+                    console.log('scalez');
+                   $('.nav-pills li.active a').append('<div class="scale-div"> </div>');
+                   $('.nav-pills li.active a .scale-div').css('transform','scale(0.2)');
+
+
                 }
           	});
 
