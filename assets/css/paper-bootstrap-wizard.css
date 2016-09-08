@@ -299,7 +299,7 @@ input[type="button"]:focus {
 }
 
 .image-container {
-  height: 100vh;
+  min-height: 100vh;
   background-position: center center;
   background-size: cover;
 }
@@ -942,29 +942,53 @@ input[type="button"]:focus {
 /*            Navigation menu                */
 .nav-pills {
   background-color: #F3F2EE;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 35px;
+}
+.nav-pills > li {
+  text-align: center;
 }
 .nav-pills > li + li {
   margin-left: 0;
 }
 .nav-pills > li > a {
-  border: none;
+  padding: 0;
+  max-width: 64px;
+  max-height: 30px;
+  margin: 0 auto;
+  color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  max-height: 30px;
+  position: relative;
+  top: -15px;
+}
+.nav-pills > li > a [class*="ti-"] {
+  font-size: 17px;
+  border: 4px solid #F3F2EE;
   text-align: center;
-  border-radius: 0;
+  border-radius: 50%;
   color: rgba(0, 0, 0, 0.2);
   font-weight: 600;
-  line-height: 15px;
-  padding: 10px 20px;
+  line-height: 58px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  position: relative;
+  top: -14px;
+}
+.nav-pills > li > a:hover, .nav-pills > li > a:focus {
+  background-color: #FFFFFF;
+  color: rgba(0, 0, 0, 0.2);
+  outline: 0 !important;
+  cursor: pointer;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: inherit;
+  background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.2);
-}
-.nav-pills > li > a:hover, .nav-pills > li > a:focus {
-  background-color: #F3F2EE;
-  outline: 0 !important;
-  cursor: pointer;
 }
 
 .tooltip {
@@ -1146,15 +1170,23 @@ input[type="button"]:focus {
 .wizard-card[data-color="azzure"] .moving-tab {
   position: absolute;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   -webkit-font-smoothing: subpixel-antialiased;
-  top: -5px;
-  left: 0px;
-  border-radius: 6px;
+  top: 0px;
+  left: 90px;
   background-color: #7A9E9F;
-  color: #FFFFFF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 58px;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: 500;
+  transition: transform 0.4s cubic-bezier(0.29, 1.42, 0.79, 1) 0s, left 0.3s cubic-bezier(0.29, 1.42, 0.79, 1) 0.4s;
+}
+.wizard-card[data-color="azzure"] .moving-tab [class*="ti-"] {
+  color: #FFFFFF;
+  font-size: 22px;
 }
 .wizard-card[data-color="green"] .picture:hover {
   border-color: #7AC29A;
@@ -1166,15 +1198,23 @@ input[type="button"]:focus {
 .wizard-card[data-color="green"] .moving-tab {
   position: absolute;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   -webkit-font-smoothing: subpixel-antialiased;
-  top: -5px;
-  left: 0px;
-  border-radius: 6px;
+  top: 0px;
+  left: 90px;
   background-color: #7AC29A;
-  color: #FFFFFF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 58px;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: 500;
+  transition: transform 0.4s cubic-bezier(0.29, 1.42, 0.79, 1) 0s, left 0.3s cubic-bezier(0.29, 1.42, 0.79, 1) 0.4s;
+}
+.wizard-card[data-color="green"] .moving-tab [class*="ti-"] {
+  color: #FFFFFF;
+  font-size: 22px;
 }
 .wizard-card[data-color="blue"] .picture:hover {
   border-color: #68B3C8;
@@ -1186,15 +1226,23 @@ input[type="button"]:focus {
 .wizard-card[data-color="blue"] .moving-tab {
   position: absolute;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   -webkit-font-smoothing: subpixel-antialiased;
-  top: -5px;
-  left: 0px;
-  border-radius: 6px;
+  top: 0px;
+  left: 90px;
   background-color: #68B3C8;
-  color: #FFFFFF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 58px;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: 500;
+  transition: transform 0.4s cubic-bezier(0.29, 1.42, 0.79, 1) 0s, left 0.3s cubic-bezier(0.29, 1.42, 0.79, 1) 0.4s;
+}
+.wizard-card[data-color="blue"] .moving-tab [class*="ti-"] {
+  color: #FFFFFF;
+  font-size: 22px;
 }
 .wizard-card[data-color="orange"] .picture:hover {
   border-color: #F3BB45;
@@ -1206,15 +1254,23 @@ input[type="button"]:focus {
 .wizard-card[data-color="orange"] .moving-tab {
   position: absolute;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   -webkit-font-smoothing: subpixel-antialiased;
-  top: -5px;
-  left: 0px;
-  border-radius: 6px;
+  top: 0px;
+  left: 90px;
   background-color: #F3BB45;
-  color: #FFFFFF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 58px;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: 500;
+  transition: transform 0.4s cubic-bezier(0.29, 1.42, 0.79, 1) 0s, left 0.3s cubic-bezier(0.29, 1.42, 0.79, 1) 0.4s;
+}
+.wizard-card[data-color="orange"] .moving-tab [class*="ti-"] {
+  color: #FFFFFF;
+  font-size: 22px;
 }
 .wizard-card[data-color="red"] .picture:hover {
   border-color: #EB5E28;
@@ -1226,15 +1282,23 @@ input[type="button"]:focus {
 .wizard-card[data-color="red"] .moving-tab {
   position: absolute;
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   -webkit-font-smoothing: subpixel-antialiased;
-  top: -5px;
-  left: 0px;
-  border-radius: 6px;
+  top: 0px;
+  left: 90px;
   background-color: #EB5E28;
-  color: #FFFFFF;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 58px;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
   font-weight: 500;
+  transition: transform 0.4s cubic-bezier(0.29, 1.42, 0.79, 1) 0s, left 0.3s cubic-bezier(0.29, 1.42, 0.79, 1) 0.4s;
+}
+.wizard-card[data-color="red"] .moving-tab [class*="ti-"] {
+  color: #FFFFFF;
+  font-size: 22px;
 }
 .wizard-card .picture input[type="file"] {
   cursor: pointer;
@@ -1248,7 +1312,7 @@ input[type="button"]:focus {
 }
 .wizard-card .tab-content {
   min-height: 340px;
-  padding: 20px 10px;
+  padding: 105px 20px 10px;
 }
 .wizard-card .wizard-footer {
   padding: 0 15px 5px;
@@ -1257,7 +1321,7 @@ input[type="button"]:focus {
   display: none;
 }
 .wizard-card .wizard-header {
-  padding: 15px 15px 25px 15px;
+  padding: 15px 15px 15px 15px;
   position: relative;
   border-radius: 3px 3px 0 0;
   z-index: 3;

@@ -3,6 +3,9 @@ transparent = true;
 
         $(document).ready(function(){
 
+
+
+
             /*  Activate the tooltips      */
             $('[rel="tooltip"]').tooltip();
 
@@ -30,7 +33,7 @@ transparent = true;
                 'previousSelector': '.btn-previous',
 
                 onNext: function(tab, navigation, index) {
-                	var $valid = $('.wizard-card form').valid();
+                	var $valid = $('.wizard-card form').valid(); return;
                 	if(!$valid) {
                 		$validator.focusInvalid();
                 		return false;
@@ -50,12 +53,23 @@ transparent = true;
                       $width = 50;
                   }
 
+                  var $current = index+1;
+
+
+
                    navigation.find('li').css('width',$width + '%');
-                   $first_li = navigation.find('li:first-child a').html();
-                   $moving_div = $('<div class="moving-tab">' + $first_li + '</div>');
+
+                   $moving_div = $('<div class="moving-tab"/>');
                    $('.wizard-card .wizard-navigation').append($moving_div);
-                   refreshAnimation($wizard, index);
-                   $('.moving-tab').css('transition','transform 0s');
+
+
+                    // first_li_icon = navigation.find('li:first-child a i').attr("class");
+                    // $('.moving-tab').html(decodeURI('<i class="' + first_li_icon + '"></i>'));
+
+
+                //    refreshAnimation($wizard, index);
+                //    $('.moving-tab').css('transition','transform 0s');
+
                },
 
                 onTabClick : function(tab, navigation, index){
@@ -85,28 +99,14 @@ transparent = true;
                         $($wizard).find('.btn-finish').hide();
                     }
 
-                    button_text = navigation.find('li:nth-child(' + $current + ') a').html();
+                    //button_text = navigation.find('li:nth-child(' + $current + ') a').html();
 
-                    setTimeout(function(){
-                        $('.moving-tab').text(button_text);
-                    }, 150);
+                    icon_class = navigation.find('li:nth-child(' + $current + ') a i').attr('class');
+                     $('.moving-tab').html(decodeURI('<i class="' + icon_class + '"></i>'));
 
-                    var checkbox = $('.footer-checkbox');
-
-                    if( !index == 0 ){
-                        $(checkbox).css({
-                            'opacity':'0',
-                            'visibility':'hidden',
-                            'position':'absolute'
-                        });
-                    } else {
-                        $(checkbox).css({
-                            'opacity':'1',
-                            'visibility':'visible'
-                        });
-                    }
 
                     refreshAnimation($wizard, index);
+
                 }
           	});
 
@@ -157,11 +157,11 @@ transparent = true;
             $('.wizard-card').each(function(){
                 $wizard = $(this);
                 index = $wizard.bootstrapWizard('currentIndex');
-                refreshAnimation($wizard, index);
+                // refreshAnimation($wizard, index);
 
-                $('.moving-tab').css({
-                    'transition': 'transform 0s'
-                });
+                // $('.moving-tab').css({
+                //     'transition': 'transform 0s'
+                // });
             });
         });
 
@@ -169,22 +169,26 @@ transparent = true;
             total_steps = $wizard.find('li').length;
             move_distance = $wizard.width() / total_steps;
             step_width = move_distance;
-            move_distance *= index;
+            move_distance = move_distance * index + step_width/2 - 35;
 
-            $current = index + 1;
-
-            if($current == 1){
-                move_distance -= 9;
-            } else if($current == total_steps){
-                move_distance += 9;
-            }
-
-            $wizard.find('.moving-tab').css('width', step_width);
+            console.log('fac cerc mic ');
             $('.moving-tab').css({
-                'transform':'translate3d(' + move_distance + 'px, 0, 0)',
-                'transition': 'all 0.5s cubic-bezier(0.29, 1.42, 0.79, 1)'
+                'transform':' scale(0.3)',
+                'left': move_distance
 
             });
+
+            setTimeout(function(){
+                $('.moving-tab').css({
+                    'transform':' scale(1)',
+                    'left': move_distance
+                });
+
+                console.log('sterg clasa');
+            },1000);
+
+
+
         }
 
         function debounce(func, wait, immediate) {

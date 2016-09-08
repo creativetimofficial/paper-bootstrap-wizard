@@ -2,35 +2,59 @@
 
 .nav-pills {
     background-color: $gray-input-bg;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 35px;
+
+    > li {
+        text-align: center;
+    }
 
     > li + li {
         margin-left: 0;
     }
     > li > a {
-        border: none;
-        text-align: center;
-        border-radius: 0;
+        padding: 0;
+        max-width: 64px;
+        max-height: 30px;
+        margin: 0 auto;
         color: $form-placeholder-color;
-        font-weight: $font-weight-bold;
-        line-height: 15px;
-        padding: 10px 20px;
+        border-radius: 50%;
+        max-height: 30px;
+        position: relative;
+        top: -15px;
+
+        [class*="ti-"]{
+            font-size: 17px;
+            border: 4px solid $gray-input-bg;
+            text-align: center;
+            border-radius: 50%;
+            color: $form-placeholder-color;
+            font-weight: $font-weight-bold;
+            line-height: 58px;
+            padding: 20px;
+            background-color: $white-color;
+            margin: 0 auto;
+            position: relative;
+            top: -14px;
+        }
+
+        &:hover,
+        &:focus{
+            background-color: $white-color;
+            color: $form-placeholder-color;
+            outline: 0 !important;
+            cursor: pointer;
+        }
+
 
     }
 
     > li.active > a,
     > li.active > a:hover,
     > li.active > a:focus {
-        background-color: inherit;
+        background-color: $white-color;
         color: $form-placeholder-color;
-    }
-
-    > li > a{
-
-        &:hover,
-        &:focus{
-            background-color: $gray-input-bg;
-            outline: 0 !important;
-            cursor: pointer;
-        }
     }
 }

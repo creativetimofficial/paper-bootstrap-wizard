@@ -42,7 +42,7 @@ input[type="button"]:focus {
 
 
 .image-container{
-    height: 100vh;
+    min-height: 100vh;
     background-position: center center;
     background-size: cover;
 }
@@ -128,4 +128,8 @@ input[type="button"]:focus {
 
 .wizard-navigation{
     position: relative;
+}
+
+.small-circle{
+    
 }

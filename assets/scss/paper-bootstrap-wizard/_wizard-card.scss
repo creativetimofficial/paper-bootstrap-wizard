@@ -62,7 +62,7 @@
 
     .tab-content{
         min-height: 340px;
-        padding: 20px 10px;
+        padding: 105px 20px 10px;
     }
 
     .wizard-footer{
@@ -74,7 +74,7 @@
     }
 
     .wizard-header{
-        padding: 15px 15px 25px 15px;
+        padding: 15px 15px 15px 15px;
         position: relative;
         border-radius: 3px 3px 0 0;
         z-index: 3;
@@ -144,5 +144,6 @@
     .description{
         color: #999999;
         font-size: 14px;
+
     }
 }
