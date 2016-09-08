@@ -33,7 +33,7 @@ transparent = true;
                 'previousSelector': '.btn-previous',
 
                 onNext: function(tab, navigation, index) {
-                	var $valid = $('.wizard-card form').valid(); return;
+                	var $valid = $('.wizard-card form').valid();
                 	if(!$valid) {
                 		$validator.focusInvalid();
                 		return false;
@@ -58,18 +58,6 @@ transparent = true;
 
 
                    navigation.find('li').css('width',$width + '%');
-
-                   $moving_div = $('<div class="moving-tab"/>');
-                   $('.wizard-card .wizard-navigation').append($moving_div);
-
-
-                    // first_li_icon = navigation.find('li:first-child a i').attr("class");
-                    // $('.moving-tab').html(decodeURI('<i class="' + first_li_icon + '"></i>'));
-
-
-                //    refreshAnimation($wizard, index);
-                //    $('.moving-tab').css('transition','transform 0s');
-
                },
 
                 onTabClick : function(tab, navigation, index){
@@ -98,15 +86,6 @@ transparent = true;
                         $($wizard).find('.btn-next').show();
                         $($wizard).find('.btn-finish').hide();
                     }
-
-                    //button_text = navigation.find('li:nth-child(' + $current + ') a').html();
-
-                    icon_class = navigation.find('li:nth-child(' + $current + ') a i').attr('class');
-                     $('.moving-tab').html(decodeURI('<i class="' + icon_class + '"></i>'));
-
-
-                    refreshAnimation($wizard, index);
-
                 }
           	});
 
@@ -152,54 +131,3 @@ transparent = true;
                 reader.readAsDataURL(input.files[0]);
             }
         }
-
-        $(window).resize(function(){
-            $('.wizard-card').each(function(){
-                $wizard = $(this);
-                index = $wizard.bootstrapWizard('currentIndex');
-                // refreshAnimation($wizard, index);
-
-                // $('.moving-tab').css({
-                //     'transition': 'transform 0s'
-                // });
-            });
-        });
-
-        function refreshAnimation($wizard, index){
-            total_steps = $wizard.find('li').length;
-            move_distance = $wizard.width() / total_steps;
-            step_width = move_distance;
-            move_distance = move_distance * index + step_width/2 - 35;
-
-            console.log('fac cerc mic ');
-            $('.moving-tab').css({
-                'transform':' scale(0.3)',
-                'left': move_distance
-
-            });
-
-            setTimeout(function(){
-                $('.moving-tab').css({
-                    'transform':' scale(1)',
-                    'left': move_distance
-                });
-
-                console.log('sterg clasa');
-            },1000);
-
-
-
-        }
-
-        function debounce(func, wait, immediate) {
-        	var timeout;
-        	return function() {
-        		var context = this, args = arguments;
-        		clearTimeout(timeout);
-        		timeout = setTimeout(function() {
-        			timeout = null;
-        			if (!immediate) func.apply(context, args);
-        		}, wait);
-        		if (immediate && !timeout) func.apply(context, args);
-        	};
-        };
