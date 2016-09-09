@@ -1341,7 +1341,8 @@ input[type="button"]:focus {
 }
 .wizard-card .info-text {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
+  padding-top: 12px;
 }
 .wizard-card .choice {
   text-align: center;
