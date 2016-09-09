@@ -100,13 +100,29 @@ transparent = true;
 
                         })
 
-                        $('.nav-pills li.active a .icon-circle').css('border','3px solid #F3BB45');
+                        border_circle_color = $('.wizard-card').data('color');
+                        $('.nav-pills li.active a .icon-circle').css('border','3px solid ' + converterColor(border_circle_color) + '');
 
                 }
           	});
 
             function converterColor(color){
-                switch (orange)
+                switch (color)
+                    case 'orange':
+                        return '#F3BB45';
+                        break;
+                    case 'blue':
+                        return '#447DF7';
+                        break;
+                    case 'green':
+                        return '#7AC29A';
+                        break;
+                    case 'red':
+                        return '#FB404B';
+                        break;
+                    case 'azzure':
+                        return '#23CCEF';
+                        break;
             }
 
 
