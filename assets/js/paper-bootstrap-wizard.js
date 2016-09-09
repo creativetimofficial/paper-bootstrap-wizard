@@ -88,50 +88,44 @@ transparent = true;
                         $($wizard).find('.btn-finish').hide();
                     }
 
-                    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    //update progress
+                    var move_distance = 100 / $total;
+                    move_distance = move_distance * (index) + move_distance / 2;
 
-                        //update progress
-                        var step = $(e.target).data('step');
-                        var move_distance = 100 / $total;
-                        move_distance = move_distance * (step-1) + move_distance / 2;
+                    $wizard.find($('.progress-bar')).css({width: move_distance + '%'});
+                    //e.relatedTarget // previous tab
 
-                        $('.progress-bar').css({width: move_distance + '%'});
-                        //e.relatedTarget // previous tab
+                    $wizard.find($('.wizard-card .nav-pills li.active a .icon-circle')).addClass('checked');
 
-                    })
-
-                    $('.wizard-card .nav-pills li.active a .icon-circle').addClass('checked');
-
-                }
-          	});
+	            });
 
 
-            // Prepare the preview for profile picture
-            $("#wizard-picture").change(function(){
-                readURL(this);
-            });
+                // Prepare the preview for profile picture
+                $("#wizard-picture").change(function(){
+                    readURL(this);
+                });
 
-            $('[data-toggle="wizard-radio"]').click(function(){
-                wizard = $(this).closest('.wizard-card');
-                wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
-                $(this).addClass('active');
-                $(wizard).find('[type="radio"]').removeAttr('checked');
-                $(this).find('[type="radio"]').attr('checked','true');
-            });
-
-            $('[data-toggle="wizard-checkbox"]').click(function(){
-                if( $(this).hasClass('active')){
-                    $(this).removeClass('active');
-                    $(this).find('[type="checkbox"]').removeAttr('checked');
-                } else {
+                $('[data-toggle="wizard-radio"]').click(function(){
+                    wizard = $(this).closest('.wizard-card');
+                    wizard.find('[data-toggle="wizard-radio"]').removeClass('active');
                     $(this).addClass('active');
-                    $(this).find('[type="checkbox"]').attr('checked','true');
-                }
+                    $(wizard).find('[type="radio"]').removeAttr('checked');
+                    $(this).find('[type="radio"]').attr('checked','true');
+                });
+
+                $('[data-toggle="wizard-checkbox"]').click(function(){
+                    if( $(this).hasClass('active')){
+                        $(this).removeClass('active');
+                        $(this).find('[type="checkbox"]').removeAttr('checked');
+                    } else {
+                        $(this).addClass('active');
+                        $(this).find('[type="checkbox"]').attr('checked','true');
+                    }
+                });
+
+                $('.set-full-height').css('height', 'auto');
+
             });
-
-            $('.set-full-height').css('height', 'auto');
-
-        });
 
 
 
