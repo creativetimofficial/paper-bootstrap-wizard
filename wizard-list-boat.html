@@ -18,6 +18,7 @@
 
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link href="assets/css/themify-icons.css" rel="stylesheet">
 
 </head>
 
@@ -59,10 +60,36 @@
                         	</h3>
                     	</div>
 						<div class="wizard-navigation">
+							<div class="progress-with-circle">
+							     <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" style="width: 21%;">
+
+							     </div>
+   				 			</div>
 							<ul>
-	                            <li><a href="#details" data-toggle="tab">Details</a></li>
-	                            <li><a href="#captain" data-toggle="tab">Captain</a></li>
-	                            <li><a href="#description" data-toggle="tab">Description</a></li>
+	                            <li>
+									<a href="#details" data-toggle="tab" data-step="1">
+										<div class="icon-circle">
+											<i class="ti-paint-bucket"></i>
+										</div>
+										Details
+									</a>
+								</li>
+	                            <li>
+									<a href="#captain" data-toggle="tab" data-step="2">
+										<div class="icon-circle">
+											<i class="ti-eye"></i>
+										</div>
+										Captain
+									</a>
+								</li>
+	                            <li>
+									<a href="#description" data-toggle="tab" data-step="3">
+										<div class="icon-circle">
+											<i class="ti-pencil"></i>
+										</div>
+										Description
+									</a>
+								</li>
 	                        </ul>
 						</div>
 
@@ -163,12 +190,12 @@
                         </div>
                         <div class="wizard-footer">
                             	<div class="pull-right">
-                                    <input type='button' class='btn btn-next btn-fill btn-info btn-wd' name='next' value='Next' />
-                                    <input type='button' class='btn btn-finish btn-fill btn-info btn-wd' name='finish' value='Finish' />
+                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish' />
 
                                 </div>
                                 <div class="pull-left">
-                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+                                    <input type='button' class='btn btn-previous btn-default btn-wd' name='previous' value='Previous' />
                                 </div>
                                 <div class="clearfix"></div>
                         </div>
