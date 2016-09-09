@@ -88,13 +88,26 @@ transparent = true;
                         $($wizard).find('.btn-finish').hide();
                     }
 
-                    console.log('scalez');
-                   $('.nav-pills li.active a').append('<div class="scale-div"> </div>');
-                   $('.nav-pills li.active a .scale-div').css('transform','scale(0.2)');
+                        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
+                            //update progress
+                            var step = $(e.target).data('step');
+                            var move_distance = 100 / $total;
+                            move_distance = move_distance * (step-1) + move_distance / 2;
+
+                            $('.progress-bar').css({width: move_distance + '%'});
+                            //e.relatedTarget // previous tab
+
+                        })
+
+                        $('.nav-pills li.active a .icon-circle').css('border','3px solid #F3BB45');
 
                 }
           	});
+
+            function converterColor(color){
+                switch (orange)
+            }
 
 
             // Prepare the preview for profile picture

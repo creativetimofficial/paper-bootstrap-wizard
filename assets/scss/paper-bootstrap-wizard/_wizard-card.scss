@@ -61,7 +61,7 @@
     }
 
     .tab-content{
-        min-height: 340px;
+        min-height: 435px;
         padding: 105px 20px 10px;
     }
 
@@ -97,6 +97,24 @@
         margin-bottom: 0px;
     }
 
+    .wizard-navigation{
+        position: relative;
+
+        .progress-with-circle{
+            position: relative;
+            top: 40px;
+            z-index: 50;
+            height: 4px;
+
+            .progress-bar{
+                box-shadow: none;
+                -webkit-transition: width .3s ease;
+                -o-transition: width .3s ease;
+                transition: width .3s ease;
+            }
+        }
+    }
+
     .info-text{
         text-align: center;
         padding-bottom: 20px;
@@ -105,7 +123,7 @@
     .choice{
         text-align: center;
         cursor: pointer;
-        margin-top: 35px;
+        margin-top: 38px;
 
         .icon{
             text-align: center;
@@ -122,8 +140,8 @@
         }
 
         i{
-            font-size: 33px;
-            line-height: 65px;
+            font-size: 32px;
+            line-height: 55px;
         }
 
         &:hover,
