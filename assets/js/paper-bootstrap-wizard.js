@@ -97,7 +97,8 @@ transparent = true;
 
                     $wizard.find($('.wizard-card .nav-pills li.active a .icon-circle')).addClass('checked');
 
-	            });
+                }
+	        });
 
 
                 // Prepare the preview for profile picture
