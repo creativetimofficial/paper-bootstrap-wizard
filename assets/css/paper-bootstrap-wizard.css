@@ -999,7 +999,7 @@ input[type="button"]:focus {
 .nav-pills > li.active > a:focus [class*="ti-"] {
   color: #FFFFFF;
   font-size: 24px;
-  top: 19px;
+  top: 21px;
   transition: .2s font-size linear;
 }
 
