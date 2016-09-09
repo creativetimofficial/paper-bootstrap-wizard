@@ -31,7 +31,7 @@
  *
  * ========================================================= */
 
-/* Paper Bootstrap Wizard Functions */
+// Paper Bootstrap Wizard Functions 
 
 searchVisible = 0;
 transparent = true;
