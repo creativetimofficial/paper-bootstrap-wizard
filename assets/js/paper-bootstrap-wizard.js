@@ -107,7 +107,7 @@ transparent = true;
           	});
 
             function converterColor(color){
-                switch (color)
+                switch (color) {
                     case 'orange':
                         return '#F3BB45';
                         break;
@@ -115,7 +115,7 @@ transparent = true;
                         return '#447DF7';
                         break;
                     case 'green':
-                        return '#7AC29A';
+                        return '.label-success';
                         break;
                     case 'red':
                         return '#FB404B';
@@ -123,6 +123,8 @@ transparent = true;
                     case 'azzure':
                         return '#23CCEF';
                         break;
+                }
+
             }
 
 
