@@ -13,7 +13,7 @@
     }
     > li > a {
         padding: 0;
-        max-width: 68px;
+        max-width: 78px;
         margin: 0 auto;
         color: $form-placeholder-color;
         border-radius: 50%;
@@ -36,7 +36,7 @@
 
         &:hover,
         &:focus{
-            background-color: $white-color;
+            background-color: transparent;
             color: $form-placeholder-color;
             outline: 0 !important;
             cursor: pointer;
@@ -52,7 +52,7 @@
             border-radius: 50%;
             display: inline-block;
             position: absolute;
-            right: -1px;
+            right: 5px;
             top: -4px;
             transform: scale(1);
             transition: .2s all linear;
@@ -64,7 +64,7 @@
     > li.active > a,
     > li.active > a:hover,
     > li.active > a:focus {
-        background-color: $white-color;
+        background-color: transparent;
         font-size: 15px;
         transition: .2s font-size linear;
 

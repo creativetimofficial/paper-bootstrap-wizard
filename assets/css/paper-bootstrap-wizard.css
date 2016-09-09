@@ -949,7 +949,7 @@ input[type="button"]:focus {
 }
 .nav-pills > li > a {
   padding: 0;
-  max-width: 68px;
+  max-width: 78px;
   margin: 0 auto;
   color: rgba(0, 0, 0, 0.2);
   border-radius: 50%;
@@ -970,7 +970,7 @@ input[type="button"]:focus {
   transition: .2s all linear;
 }
 .nav-pills > li > a:hover, .nav-pills > li > a:focus {
-  background-color: #FFFFFF;
+  background-color: transparent;
   color: rgba(0, 0, 0, 0.2);
   outline: 0 !important;
   cursor: pointer;
@@ -982,7 +982,7 @@ input[type="button"]:focus {
   border-radius: 50%;
   display: inline-block;
   position: absolute;
-  right: -1px;
+  right: 5px;
   top: -4px;
   transform: scale(1);
   transition: .2s all linear;
@@ -990,7 +990,7 @@ input[type="button"]:focus {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: #FFFFFF;
+  background-color: transparent;
   font-size: 15px;
   transition: .2s font-size linear;
 }
