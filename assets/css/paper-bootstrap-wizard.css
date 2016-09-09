@@ -1194,22 +1194,22 @@ input[type="button"]:focus {
 .wizard-card .picture-src {
   width: 100%;
 }
-.wizard-card[data-color="azzure"] .picture:hover {
+.wizard-card[data-color="azure"] .picture:hover {
   border-color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .nav-pills > li.active > a:after {
+.wizard-card[data-color="azure"] .nav-pills > li.active > a:after {
   background-color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .nav-pills > li.active > a {
+.wizard-card[data-color="azure"] .nav-pills > li.active > a {
   color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .nav-pills .icon-circle.checked {
+.wizard-card[data-color="azure"] .nav-pills .icon-circle.checked {
   border-color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .choice.active .card-checkboxes {
+.wizard-card[data-color="azure"] .choice.active .card-checkboxes {
   color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .wizard-navigation .progress-bar {
+.wizard-card[data-color="azure"] .wizard-navigation .progress-bar {
   background-color: #7A9E9F;
 }
 .wizard-card[data-color="green"] .picture:hover {
