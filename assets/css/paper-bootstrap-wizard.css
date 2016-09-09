@@ -969,28 +969,6 @@ input[type="button"]:focus {
   transform: scale(0);
   transition: .2s all linear;
 }
-.nav-pills > li > a .icon-circle {
-  font-size: 19px;
-  border: 3px solid #F3F2EE;
-  text-align: center;
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0.2);
-  font-weight: 600;
-  width: 70px;
-  height: 70px;
-  background-color: #FFFFFF;
-  margin: 0 auto;
-  position: relative;
-  top: -4px;
-  left: -1px;
-}
-.nav-pills > li > a .icon-circle [class*="ti-"] {
-  position: absolute;
-  z-index: 1;
-  left: 0px;
-  right: 0px;
-  top: 22px;
-}
 .nav-pills > li > a:hover, .nav-pills > li > a:focus {
   background-color: #FFFFFF;
   color: rgba(0, 0, 0, 0.2);
@@ -1176,6 +1154,28 @@ input[type="button"]:focus {
   cursor: pointer;
   text-align: center;
 }
+.wizard-card .icon-circle {
+  font-size: 19px;
+  border: 3px solid #F3F2EE;
+  text-align: center;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 600;
+  width: 70px;
+  height: 70px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  position: relative;
+  top: -4px;
+  left: -1px;
+}
+.wizard-card .icon-circle [class*="ti-"] {
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  right: 0px;
+  top: 22px;
+}
 .wizard-card .picture {
   width: 106px;
   height: 106px;
@@ -1203,7 +1203,7 @@ input[type="button"]:focus {
 .wizard-card[data-color="azzure"] .nav-pills > li.active > a {
   color: #7A9E9F;
 }
-.wizard-card[data-color="azzure"] .nav-pills > li.active > a .icon-circle {
+.wizard-card[data-color="azzure"] .nav-pills .icon-circle.checked {
   border-color: #7A9E9F;
 }
 .wizard-card[data-color="azzure"] .choice.active .card-checkboxes {
@@ -1221,7 +1221,7 @@ input[type="button"]:focus {
 .wizard-card[data-color="green"] .nav-pills > li.active > a {
   color: #7AC29A;
 }
-.wizard-card[data-color="green"] .nav-pills > li.active > a .icon-circle {
+.wizard-card[data-color="green"] .nav-pills .icon-circle.checked {
   border-color: #7AC29A;
 }
 .wizard-card[data-color="green"] .choice.active .card-checkboxes {
@@ -1239,7 +1239,7 @@ input[type="button"]:focus {
 .wizard-card[data-color="blue"] .nav-pills > li.active > a {
   color: #68B3C8;
 }
-.wizard-card[data-color="blue"] .nav-pills > li.active > a .icon-circle {
+.wizard-card[data-color="blue"] .nav-pills .icon-circle.checked {
   border-color: #68B3C8;
 }
 .wizard-card[data-color="blue"] .choice.active .card-checkboxes {
@@ -1257,7 +1257,7 @@ input[type="button"]:focus {
 .wizard-card[data-color="orange"] .nav-pills > li.active > a {
   color: #F3BB45;
 }
-.wizard-card[data-color="orange"] .nav-pills > li.active > a .icon-circle {
+.wizard-card[data-color="orange"] .nav-pills .icon-circle.checked {
   border-color: #F3BB45;
 }
 .wizard-card[data-color="orange"] .choice.active .card-checkboxes {
@@ -1275,7 +1275,7 @@ input[type="button"]:focus {
 .wizard-card[data-color="red"] .nav-pills > li.active > a {
   color: #EB5E28;
 }
-.wizard-card[data-color="red"] .nav-pills > li.active > a .icon-circle {
+.wizard-card[data-color="red"] .nav-pills .icon-circle.checked {
   border-color: #EB5E28;
 }
 .wizard-card[data-color="red"] .choice.active .card-checkboxes {

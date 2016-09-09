@@ -88,44 +88,22 @@ transparent = true;
                         $($wizard).find('.btn-finish').hide();
                     }
 
-                        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 
-                            //update progress
-                            var step = $(e.target).data('step');
-                            var move_distance = 100 / $total;
-                            move_distance = move_distance * (step-1) + move_distance / 2;
+                        //update progress
+                        var step = $(e.target).data('step');
+                        var move_distance = 100 / $total;
+                        move_distance = move_distance * (step-1) + move_distance / 2;
 
-                            $('.progress-bar').css({width: move_distance + '%'});
-                            //e.relatedTarget // previous tab
+                        $('.progress-bar').css({width: move_distance + '%'});
+                        //e.relatedTarget // previous tab
 
-                        })
+                    })
 
-                        border_circle_color = $('.wizard-card').data('color');
-                        $('.nav-pills li.active a .icon-circle').css('border','3px solid ' + converterColor(border_circle_color) + '');
+                    $('.wizard-card .nav-pills li.active a .icon-circle').addClass('checked');
 
                 }
           	});
-
-            function converterColor(color){
-                switch (color) {
-                    case 'orange':
-                        return '#F3BB45';
-                        break;
-                    case 'blue':
-                        return '#447DF7';
-                        break;
-                    case 'green':
-                        return '.label-success';
-                        break;
-                    case 'red':
-                        return '#FB404B';
-                        break;
-                    case 'azzure':
-                        return '#23CCEF';
-                        break;
-                }
-
-            }
 
 
             // Prepare the preview for profile picture

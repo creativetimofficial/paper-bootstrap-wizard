@@ -33,8 +33,10 @@
 
         > li.active > a{
             color: $color;
+        }
 
-            .icon-circle{
+        .icon-circle{
+            &.checked{
                 border-color: $color;
             }
         }

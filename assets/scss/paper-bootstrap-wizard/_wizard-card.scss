@@ -9,6 +9,30 @@
         text-align: center;
     }
 
+    .icon-circle{
+        font-size: 19px;
+        border: 3px solid $gray-input-bg;
+        text-align: center;
+        border-radius: 50%;
+        color: $form-placeholder-color;
+        font-weight: $font-weight-bold;
+        width: 70px;
+        height: 70px;
+        background-color: $white-color;
+        margin: 0 auto;
+        position: relative;
+        top: -4px;
+        left: -1px;
+
+        [class*="ti-"]{
+            position: absolute;
+            z-index: 1;
+            left: 0px;
+            right: 0px;
+            top: 22px;
+        }
+    }
+
     .picture{
         width: 106px;
         height: 106px;
