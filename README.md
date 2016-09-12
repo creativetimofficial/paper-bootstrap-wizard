@@ -2,7 +2,7 @@
 
 ![alt text](http://i.imgur.com/MevYyWm.jpg)
 
-Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit (http://demos.creative-tim.com/paper-kit)  and comes with 3 useful examples and 5 colors. The **Paper Bootstrap Wizard** is one of the most handy elements that can be used inside a project. We recommend you to use it for guiding your users in processes like “Sign Up”, “Booking”, “Completing Profile” etc.
+Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous [Paper Kit](http://demos.creative-tim.com/paper-kit) and comes with 3 useful examples and 5 colors. The **Paper Bootstrap Wizard** is one of the most handy elements that can be used inside a project. We recommend you to use it for guiding your users in processes like “Sign Up”, “Booking”, “Completing Profile” etc.
 
 
 First of all, you need to determine when you need the bootstrap wizard. If you have a form with over 10 fields, that is the right way to split it in multiple steps. Do you have users not going through with the registration process? Do you have unfinished list? They all have something in common; and they all have the same solution. So, what is wrong with letting your users see an infinite form? They will get discouraged to finish it. What is the solution? Better visual organisation, mainly in the form of a wizard with multiple steps.
