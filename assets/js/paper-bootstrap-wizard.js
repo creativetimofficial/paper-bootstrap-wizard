@@ -31,15 +31,12 @@
  *
  * ========================================================= */
 
-// Paper Bootstrap Wizard Functions 
+// Paper Bootstrap Wizard Functions
 
 searchVisible = 0;
 transparent = true;
 
         $(document).ready(function(){
-
-
-
 
             /*  Activate the tooltips      */
             $('[rel="tooltip"]').tooltip();
