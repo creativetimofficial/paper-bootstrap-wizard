@@ -11,6 +11,22 @@
     transition: all $time $type;
 }
 
+@mixin transition-font-size($time, $type) {
+    -webkit-transition: font-size $time $type;
+    -moz-transition: font-size $time $type;
+    -o-transition: font-size $time $type;
+    -ms-transition: font-size $time $type;
+    transition: font-size $time $type;
+}
+
+@mixin scale($value) {
+    -webkit-transform: scale($value);
+    -moz-transform: scale($value);
+    -o-transition: scale($value);
+    -ms-transform: scale($value);
+    transform: scale($value);
+}
+
 @mixin translateY($value) {
     -webkit-transform: translateY($value);
     -moz-transform: translateY($value);

@@ -1015,16 +1015,28 @@ input[type="button"]:focus {
   display: inline-block;
   position: absolute;
   right: 5px;
-  top: -4px;
+  top: -2px;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transition: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
-  transition: .2s all linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   background-color: transparent;
   font-size: 15px;
-  transition: .2s font-size linear;
+  -webkit-transition: font-size 0.2s linear;
+  -moz-transition: font-size 0.2s linear;
+  -o-transition: font-size 0.2s linear;
+  -ms-transition: font-size 0.2s linear;
+  transition: font-size 0.2s linear;
 }
 .nav-pills > li.active > a [class*="ti-"],
 .nav-pills > li.active > a:hover [class*="ti-"],
@@ -1032,7 +1044,11 @@ input[type="button"]:focus {
   color: #FFFFFF;
   font-size: 24px;
   top: 21px;
-  transition: .2s font-size linear;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .tooltip {
@@ -1187,7 +1203,7 @@ input[type="button"]:focus {
   text-align: center;
 }
 .wizard-card .icon-circle {
-  font-size: 19px;
+  font-size: 20px;
   border: 3px solid #F3F2EE;
   text-align: center;
   border-radius: 50%;
@@ -1198,15 +1214,14 @@ input[type="button"]:focus {
   background-color: #FFFFFF;
   margin: 0 auto;
   position: relative;
-  top: -4px;
-  left: -1px;
+  top: -2px;
 }
 .wizard-card .icon-circle [class*="ti-"] {
   position: absolute;
   z-index: 1;
-  left: 0px;
+  left: 1px;
   right: 0px;
-  top: 22px;
+  top: 23px;
 }
 .wizard-card .picture {
   width: 106px;

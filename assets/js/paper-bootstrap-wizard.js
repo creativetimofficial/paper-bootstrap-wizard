@@ -77,21 +77,10 @@ transparent = true;
                   //check number of tabs and fill the entire row
                   var $total = navigation.find('li').length;
                   $width = 100/$total;
-                  var $wizard = navigation.closest('.wizard-card');
 
-                  $display_width = $(document).width();
+                  navigation.find('li').css('width',$width + '%');
 
-                  if($display_width < 600 && $total > 3){
-                      $width = 50;
-                  }
-
-                  var $current = index+1;
-
-
-
-                   navigation.find('li').css('width',$width + '%');
-
-               },
+                },
 
                 onTabClick : function(tab, navigation, index){
 
