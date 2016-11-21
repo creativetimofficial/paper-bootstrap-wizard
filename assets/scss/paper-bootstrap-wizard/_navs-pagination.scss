@@ -53,9 +53,9 @@
             display: inline-block;
             position: absolute;
             right: 5px;
-            top: -4px;
-            transform: scale(1);
-            transition: .2s all linear;
+            top: -2px;
+            @include scale(1);
+            @include transition(.2s, linear);
         }
 
 
@@ -66,14 +66,14 @@
     > li.active > a:focus {
         background-color: transparent;
         font-size: 15px;
-        transition: .2s font-size linear;
+        @include transition-font-size(.2s, linear);
 
 
         [class*="ti-"]{
             color: $white-color;
             font-size: 24px;
             top: 21px;
-            transition: .2s font-size linear;
+            @include transition(.2s, linear);
         }
     }
 }

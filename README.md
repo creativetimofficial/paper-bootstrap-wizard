@@ -64,7 +64,9 @@ paper-bootstrap-wizard/
 
 ### Version logs
 
-v1.0, 12 Sep '16 [initial release]
+v1.0.0, 12 Sep 2016 [initial release]
+v1.0.1, 21 Nov 2016 Bug fixes
+  - fix issue on responsive
 
 
 ## Useful Links
