@@ -55,7 +55,6 @@ paper-bootstrap-wizard/
 |   └── img/
 |
 ├── documentation
-├── License.pdf
 ├── wizard-create-profile.html
 ├── wizard-find-desk.html
 ├── wizard-list-place.html
@@ -67,6 +66,14 @@ paper-bootstrap-wizard/
 v1.0.0, 12 Sep 2016 [initial release]
 v1.0.1, 21 Nov 2016 Bug fixes
   - fix issue on responsive
+v1.0.2, 22 Mar 2017
+  - switched to MIT license
+  
+
+### License
+
+- Copyright 2017 Creative Tim (http://www.creative-tim.com)
+- Licensed under MIT (https://github.com/creativetimofficial/paper-bootstrap-wizard/blob/master/LICENSE.md)
 
 
 ## Useful Links
