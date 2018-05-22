@@ -1,17 +1,35 @@
-/*!
-
- =========================================================
- * Paper Bootstrap Wizard - v1.0.2
- =========================================================
- 
- * Product Page: https://www.creative-tim.com/product/paper-bootstrap-wizard
- * Copyright 2017 Creative Tim (http://www.creative-tim.com)
- * Licensed under MIT (https://github.com/creativetimofficial/paper-bootstrap-wizard/blob/master/LICENSE.md)
- 
- =========================================================
- 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
- */
+/*! =========================================================
+ *
+ Paper Bootstrap Wizard - V1.0.1
+*
+* =========================================================
+*
+* Copyright 2016 Creative Tim (http://www.creative-tim.com/product/paper-bootstrap-wizard)
+ *
+ *                       _oo0oo_
+ *                      o8888888o
+ *                      88" . "88
+ *                      (| -_- |)
+ *                      0\  =  /0
+ *                    ___/`---'\___
+ *                  .' \|     |// '.
+ *                 / \|||  :  |||// \
+ *                / _||||| -:- |||||- \
+ *               |   | \\  -  /// |   |
+ *               | \_|  ''\---/''  |_/ |
+ *               \  .-\__  '-'  ___/-. /
+ *             ___'. .'  /--.--\  `. .'___
+ *          ."" '<  `.___\_<|>_/___.' >' "".
+ *         | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+ *         \  \ `_.   \_ __\ /__ _/   .-` /  /
+ *     =====`-.____`.___ \_____/___.-`___.-'=====
+ *                       `=---='
+ *
+ *     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *
+ *               Buddha Bless:  "No Bugs"
+ *
+ * ========================================================= */
 
 // Paper Bootstrap Wizard Functions
 
@@ -145,3 +163,26 @@ transparent = true;
                 reader.readAsDataURL(input.files[0]);
             }
         }
+
+
+        function debounce(func, wait, immediate) {
+        	var timeout;
+        	return function() {
+        		var context = this, args = arguments;
+        		clearTimeout(timeout);
+        		timeout = setTimeout(function() {
+        			timeout = null;
+        			if (!immediate) func.apply(context, args);
+        		}, wait);
+        		if (immediate && !timeout) func.apply(context, args);
+        	};
+        };
+
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-46172202-1', 'auto');
+ga('send', 'pageview');
